@@ -1,0 +1,34 @@
+<h1> add payee </h1>
+
+<ul class=spaced non-truncated requires-action>
+  <li class="item info">
+    <p class="label-small font-bold several-label prevent-overflow">
+      Payee Type
+    </p>
+    <p class="label-large font-light">SCB Registered Payee</p>
+  </li>
+    <li class="item input">
+      <p class="label-small font-bold several-label prevent-overflow">
+        Payee Name
+      </p>
+      <input value="" class="input-text full-width" placeholder="Enter Payee name" type="text" min="0" maxlength="20" id="payeeNameField">
+    </li>
+    <li class="item input">
+      <p class="label-small font-bold several-label prevent-overflow">
+        Payee Account Number
+      </p>
+      <input value="" class="input-text full-width" placeholder="Enter Payee Account Number" type="text" min="0" maxlength="20" id="payeeNameField">
+    </li>
+    <li class="item input">
+      <p class="label-small font-bold several-label prevent-overflow">
+        Short Name
+      </p>
+      <input value="" class="input-text full-width" placeholder="Enter Short name" type="text" min="0" maxlength="20" id="payeeNameField">
+    </li>
+  <p class="label-small font-bold">Important Note</p>
+  <a href="#" title="" class="label-small font-light inline-link" {{action showHideAddPayeeNotes on="click" target="controller"}}>{{showHideAddPayeeText}}</a>
+  {{#if showAddPayeeNotes}}
+    <p class="label-small font-light">{{formatText i18nData.scbRegPayeeNotesText}}</p>
+  {{/if}}
+</ul>
+<input type="submit" {{action continueAction}} value="Continue" class="button spaced type-1 single">

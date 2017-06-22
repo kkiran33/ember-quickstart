@@ -1,0 +1,60 @@
+.requires-action {
+  .input-text,
+  .dropdown { margin-bottom: 5px; }
+}
+
+.item {
+  border-bottom: 1px solid $separatorBorder1;
+  background-color: $lightColor1;
+  color: $darkColor3;
+  padding: 1.5rem 1rem;
+
+  &.has-icon { padding-left: 45px; }
+
+  &.info {
+    padding-top: 1.2rem;
+    padding-bottom: 1.1rem;
+  }
+
+  &.input {
+    padding-top: 1.0rem;
+    padding-bottom: 1.1rem;
+  }
+
+  a { display: block; }
+  p { @extend %text-overflow; }
+}
+
+.label-small {
+  @include font-size(1.9);
+  &.font-light { @include font-size(1.4); }
+}
+
+.font-bold { font-family: HeroicCondensedMedium, arial, sans-serif; font-weight: normal; }
+
+.several-label { padding-bottom: .25em ; }
+
+.prevent-overflow { padding: 0 .1em .1em .1em; }
+
+.input-text {
+  height: 3.4rem;
+  margin: 0 0 14px 0;
+  padding: 0 10px;
+  @extend .input-generic;
+  &.calendar-icon {
+    padding-left: 40px;
+    @extend .label-medium;
+    @include nav-sprite(calendar-gray,$offset-x: 10px, $offset-y: 7px);
+  }
+  &.profiles-text{
+    height: 3.35rem;
+    margin:0;
+  }
+}
+
+.font-light { font-family: HelveticaNeueLight, arial, sans-serif; font-weight: normal !important; }
+
+.inline-link {
+  color: #0094D1;
+  display: inline-block !important;
+}

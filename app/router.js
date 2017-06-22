@@ -8,6 +8,13 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('scientists');
+  this.route('about');
+  this.route('add-payee');
+  this.route('addPayeeConfirm');
+  this.route('addPayeeDetails');
+  this.route('addPayeeMerchantList');
+  this.route('addPayeeTypeList');
+  this.route('addPayeeSummary');
 });
 
 export default Router;
